@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz | Playing</title> 
+        <link rel="stylesheet" href="assets/stylesheets/styles.css"/>
+        <link rel="icon" href="assets/images/favicon.ico?v=2.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="gameBody">
+        <header>
+            <a href="index.html" id="title">Quiz</a>
+        </header>
+        
+        <main class="transparentBox">
+            <div id="topBar">
+                <div class="whiteTransBox">
+                    <p class="blueTxtPale semiBold">Time left</p>
+                    <p id="timer" class="blueTxt big semiBold"></p>
+                </div>
+                <div class="whiteTransBox" id="questionInfoBox">
+                    <span class="blueTxt big semiBold">Question <span id="questionNum">1</span>/10</span>
+                    <div id="category" class="blueTxtPale semiBold"></div>
+                </div>
+                <div class="whiteTransBox">
+                    <p class="blueTxtPale semiBold">Score</p> 
+                    <p id="scoreNum" class="infoData blueTxt big semiBold">0</p>
+                </div>
+            </div>
+            <div class="center-box">
+                <h2 id="vprasanje">If you don't see the question, wait at least 5s and then refresh this page.</h2>
+                <div id="odgovor">
+                    <ul id="answerList"></ul>
+                </div>
+                <div id="newBox" class="whiteTransBox">
+                    <div id="messageBox" class="big semiBold">
+                        <p id="noTimeLeft" style="display: none;">You ran out of time! Be faster!</p>
+                        <p id="message"></p>
+                    </div>
+                    <button id="mainButton" class="button big semiBold"></button>
+                </div>
+            </div>
+
+            </div>
+        </main>
+        
+        <footer id="game-footer">
+            <a href="mailto:gal.gazic@gmail.com">Gal Gazič</a> 2024 | All of the questions are from <a href="https://opentdb.com/">Open Trivia Database</a>.
+        </footer>
+        
+        <script src="assets/scripts/global.js"></script>
+        <script src="assets/scripts/mainButton.js"></script>
+        <script src="assets/scripts/answerDisplay.js"></script>
+        <script src="assets/scripts/timer.js"></script>
+        <script src="assets/scripts/questionHandling.js"></script>
+        <script> window.onload = getQuestions; </script>
+        </body>
+</html>

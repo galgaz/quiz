@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz | Result</title> 
+        <link rel="stylesheet" href="assets/stylesheets/styles.css"/>
+        <link rel="icon" href="assets/images/favicon.ico?v=2.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" id="title">Quiz</a>
+        </header>
+
+        <div class="transparentBox resultCenter">
+
+            <main class="center-box index-center">
+                <h1>Game finished!</h1>
+                <div class="whiteTransBox resultBox">
+                    <p id="scoreText" class="blueTxtPale big semiBold">Your score</p>
+                    <h1 id="scoreNum" class="blueTxt bold">0</h1>
+                </div>
+                <a href="game.html" class="button big semiBold">Play again</a>
+            </main>
+        </div>
+
+        <script>
+            let queryStr = window.location.search;
+            const urlParams = new URLSearchParams(queryStr);
+            const score = urlParams.get('score');
+            document.getElementById("scoreNum").innerHTML = score;
+        </script>
+        <footer>
+            <a href="mailto:gal.gazic@gmail.com">Gal Gazič</a> 2024 | All of the questions are from <a href="https://opentdb.com/">Open Trivia Database</a>.
+        </footer>
+    </body>
+</html>

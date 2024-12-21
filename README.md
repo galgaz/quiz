@@ -18,10 +18,8 @@ Your total score is the sum of points from all questions.
 
 <details>
 <summary>Video</summary>
-
-<video width="100%" controls>
-    <source src="https://galgaz.github.io/quiz/screenshots/video.mp4" type="video/mp4">
-</video>
+    
+https://github.com/user-attachments/assets/9bcc5484-e859-45ee-be82-a34b0bc17342
 
 </details>
 

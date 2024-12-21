@@ -20,7 +20,7 @@ Your total score is the sum of points from all questions.
 <summary>Video</summary>
 
 <video width="100%" controls>
-    <source src="screenshots/video.mp4" type="video/mp4">
+    <source src="https://galgaz.github.io/quiz/screenshots/video.mp4" type="video/mp4">
 </video>
 
 </details>
